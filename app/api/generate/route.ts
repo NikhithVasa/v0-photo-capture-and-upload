@@ -38,14 +38,14 @@ export async function POST(request: NextRequest) {
             },
           },
           {
-            text: `Transform this person's face to look like ${celebrityName}. Keep the person's pose and background but make their facial features, hairstyle, and overall appearance match ${celebrityName}'s iconic look. Make it realistic and well-blended.`,
+            text: `Using the uploaded photo, generate a selfie with ${celebrityName}. The uploaded photo should be the person taking the selfie with ${celebrityName}.`,
           },
         ],
       },
     ]
 
     const response = await ai.models.generateContentStream({
-      model: "gemini-2.0-flash-exp-image-generation",
+      model: "gemini-3-pro-image-preview",
       config,
       contents,
     })
