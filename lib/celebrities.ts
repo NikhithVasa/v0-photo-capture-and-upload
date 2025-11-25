@@ -9,11 +9,6 @@ export interface Celebrity {
 export const celebrities: Celebrity[] = [
   // Tollywood Heroes
   {
-    id: "srikanth",
-    name: "Tollywood Hero Srikanth",
-    imageUrl: "/tolliwoodhero-srikanth-actor-portrait.jpg",
-  },
-  {
     id: "allu-arjun",
     name: "Tollywood Hero Allu Arjun",
     imageUrl: "/tolliwoodhero-allu-arjun-portrait.png",
