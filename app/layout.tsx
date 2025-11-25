@@ -8,7 +8,7 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Face Transform - Celebrity Photo App",
+  title: "Get Any Selfie - Celebrity Photo App",
   description: "Transform your selfie into your favorite celebrity with AI",
   generator: "v0.app",
   icons: {

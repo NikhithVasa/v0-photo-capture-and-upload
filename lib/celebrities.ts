@@ -7,108 +7,6 @@ export interface Celebrity {
 
 // Replace these with actual public URLs (CloudFront, pre-signed URLs, or public S3 bucket URLs)
 export const celebrities: Celebrity[] = [
-  // Tollywood Heroines
-  {
-    id: "sreelela",
-    name: "Tollywood Heroine Sreelela",
-    imageUrl: "/tolliwoodheroine-sreelela-actress-portrait.jpg",
-  },
-  {
-    id: "samantha",
-    name: "Tollywood Heroine Samantha Ruth Prabhu",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "rashmika-mandanna",
-    name: "Tollywood Heroine Rashmika Mandanna",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "pooja-hegde",
-    name: "Tollywood Heroine Pooja Hegde",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "kajal-aggarwal",
-    name: "Tollywood Heroine Kajal Aggarwal",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "anushka-shetty",
-    name: "Tollywood Heroine Anushka Shetty",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "keerthy-suresh",
-    name: "Tollywood Heroine Keerthy Suresh",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "sai-pallavi",
-    name: "Tollywood Heroine Sai Pallavi",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "nithya-menen",
-    name: "Tollywood Heroine Nithya Menen",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "tamannaah",
-    name: "Tollywood Heroine Tamannaah Bhatia",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "shruti-haasan",
-    name: "Tollywood Heroine Shruti Haasan",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "rakul-preet",
-    name: "Tollywood Heroine Rakul Preet Singh",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "mehreen-pirzada",
-    name: "Tollywood Heroine Mehreen Pirzada",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "raashi-khanna",
-    name: "Tollywood Heroine Raashi Khanna",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "lavanya-tripathi",
-    name: "Tollywood Heroine Lavanya Tripathi",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "regina-cassandra",
-    name: "Tollywood Heroine Regina Cassandra",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "nabha-natesh",
-    name: "Tollywood Heroine Nabha Natesh",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "krithi-shetty",
-    name: "Tollywood Heroine Krithi Shetty",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "mrunal-thakur",
-    name: "Tollywood Heroine Mrunal Thakur",
-    imageUrl: "/placeholder.svg",
-  },
-  {
-    id: "sree-leela",
-    name: "Tollywood Heroine Sree Leela",
-    imageUrl: "/placeholder.svg",
-  },
-
   // Tollywood Heroes
   {
     id: "srikanth",
@@ -250,6 +148,108 @@ export const celebrities: Celebrity[] = [
   {
     id: "tim-cook",
     name: "CEO Tim Cook",
+    imageUrl: "/placeholder.svg",
+  },
+
+  // Tollywood Heroines
+  {
+    id: "sreelela",
+    name: "Tollywood Heroine Sreelela",
+    imageUrl: "/tolliwoodheroine-sreelela-actress-portrait.jpg",
+  },
+  {
+    id: "samantha",
+    name: "Tollywood Heroine Samantha Ruth Prabhu",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "rashmika-mandanna",
+    name: "Tollywood Heroine Rashmika Mandanna",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "pooja-hegde",
+    name: "Tollywood Heroine Pooja Hegde",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "kajal-aggarwal",
+    name: "Tollywood Heroine Kajal Aggarwal",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "anushka-shetty",
+    name: "Tollywood Heroine Anushka Shetty",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "keerthy-suresh",
+    name: "Tollywood Heroine Keerthy Suresh",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "sai-pallavi",
+    name: "Tollywood Heroine Sai Pallavi",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "nithya-menen",
+    name: "Tollywood Heroine Nithya Menen",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "tamannaah",
+    name: "Tollywood Heroine Tamannaah Bhatia",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "shruti-haasan",
+    name: "Tollywood Heroine Shruti Haasan",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "rakul-preet",
+    name: "Tollywood Heroine Rakul Preet Singh",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "mehreen-pirzada",
+    name: "Tollywood Heroine Mehreen Pirzada",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "raashi-khanna",
+    name: "Tollywood Heroine Raashi Khanna",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "lavanya-tripathi",
+    name: "Tollywood Heroine Lavanya Tripathi",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "regina-cassandra",
+    name: "Tollywood Heroine Regina Cassandra",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "nabha-natesh",
+    name: "Tollywood Heroine Nabha Natesh",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "krithi-shetty",
+    name: "Tollywood Heroine Krithi Shetty",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "mrunal-thakur",
+    name: "Tollywood Heroine Mrunal Thakur",
+    imageUrl: "/placeholder.svg",
+  },
+  {
+    id: "sree-leela",
+    name: "Tollywood Heroine Sree Leela",
     imageUrl: "/placeholder.svg",
   },
 ]

@@ -8,6 +8,7 @@ export interface ProcessedImage {
   width: number
   height: number
   size: number
+  blobUrl?: string
 }
 
 export function validateImageFile(file: File): { valid: boolean; error?: string } {

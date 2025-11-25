@@ -73,7 +73,7 @@ export function ResultScreen({ userImage, celebrity, onStartOver }: ResultScreen
       if (navigator.share && navigator.canShare({ files: [file] })) {
         await navigator.share({
           files: [file],
-          title: `Face Transform - ${celebrity.name}`,
+          title: `Get Any Selfie - ${celebrity.name}`,
           text: `Check out my transformation as ${celebrity.name}!`,
         })
       } else {

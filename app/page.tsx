@@ -17,7 +17,31 @@ export default function Home() {
   const [userImage, setUserImage] = useState<ProcessedImage | null>(null)
   const [selectedCelebrity, setSelectedCelebrity] = useState<Celebrity | null>(null)
 
-  const handleImageCapture = (image: ProcessedImage) => {
+  const handleImageCapture = async (image: ProcessedImage) => {
+    try {
+      // Upload image to Vercel Blob
+      const response = await fetch("/api/upload", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          imageBase64: image.base64,
+          filename: `selfie-${Date.now()}.jpg`,
+        }),
+      })
+
+      if (response.ok) {
+        const { url } = await response.json()
+        // Add blob URL to the image object
+        image.blobUrl = url
+      } else {
+        console.error("Failed to upload image to blob storage")
+      }
+    } catch (error) {
+      console.error("Error uploading image:", error)
+    }
+
     setUserImage(image)
     setScreen("select-celebrity")
   }
@@ -44,7 +68,7 @@ export default function Home() {
               <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
                 <Sparkles className="h-10 w-10" />
               </div>
-              <h1 className="text-4xl font-bold tracking-tight">Face Transform</h1>
+              <h1 className="text-4xl font-bold tracking-tight">Get Any Selfie</h1>
               <p className="text-lg text-muted-foreground max-w-md">
                 Upload your selfie and see yourself transformed as your favorite celebrity
               </p>
